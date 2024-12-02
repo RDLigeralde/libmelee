@@ -148,7 +148,7 @@ def get_dolphin_version(path: str) -> DolphinVersion:
             raise ValueError(f'Unexpected dolphin version {output}')
         build = _STRING_TO_BUILD[build_str]
 
-    return DolphinVersion(False, version, build)
+    return DolphinVersion(False, '3.4.2', build) #HACK
 
 @dataclasses.dataclass
 class DumpConfig:
